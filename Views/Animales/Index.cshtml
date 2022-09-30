@@ -1,0 +1,117 @@
+﻿@model IEnumerable<WebApplicationTest1Zoologico.Models.Animales>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empleados.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seccionesZoo.NombreSeccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCientifico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Raza)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tamaño)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CaracteristicasEspeciales)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarOrigen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaisOrigen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RasgosDestacados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaLlegada)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaTraslado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaDeceso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraAlimentacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoAlimentacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.empleados.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.seccionesZoo.NombreSeccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCientifico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Raza)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tamaño)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CaracteristicasEspeciales)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarOrigen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaisOrigen)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RasgosDestacados)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaLlegada)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaTraslado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaDeceso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraAlimentacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoAlimentacion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

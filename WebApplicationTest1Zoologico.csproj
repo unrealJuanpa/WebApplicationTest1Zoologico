@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnimalesController.cs" />
     <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SeccionesZoosController.cs" />
@@ -185,6 +186,11 @@
     <Content Include="Views\SeccionesZoos\Details.cshtml" />
     <Content Include="Views\SeccionesZoos\Edit.cshtml" />
     <Content Include="Views\SeccionesZoos\Index.cshtml" />
+    <Content Include="Views\Animales\Create.cshtml" />
+    <Content Include="Views\Animales\Delete.cshtml" />
+    <Content Include="Views\Animales\Details.cshtml" />
+    <Content Include="Views\Animales\Edit.cshtml" />
+    <Content Include="Views\Animales\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
