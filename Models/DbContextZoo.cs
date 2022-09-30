@@ -12,5 +12,9 @@ namespace WebApplicationTest1Zoologico.Models
         {
 
         }
+
+        public DbSet<Animales> Animales { get; set; }
+        public DbSet<Empleados> Empleadoses { get; set; }
+        public DbSet<SeccionesZoo> SeccionesZooes { get; set; }
     }
 }
